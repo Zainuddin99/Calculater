@@ -1,0 +1,150 @@
+html,body{
+			height: 100%;
+			width: 100%;
+			background-color:darkgrey;
+			margin: 5px;
+		}
+		.screen{
+			height: 100%;
+			width: 650px;
+			margin: auto;
+		}
+		*{
+			box-sizing: border-box;
+		}
+		#display-screen{
+			height: 25%;
+			width: 100%;
+			background-color: black;transition: 0.8s ease;
+			
+			color: lightgrey;
+			font-size: 60px;
+			font-style: ariel;
+		}
+		.button1{
+			width: 25%;
+			height: 15%;
+			background-color: black;
+			border:1px solid grey;
+			float: left;transition: 0.8s ease;
+			color: white;
+			font-size: 45px;
+			text-align:center;
+			display: flex;
+  justify-content: center;
+  align-items: center;
+		}
+		.button3{
+			
+			width: 25%;
+			height: 15%;
+			transition: 0.8s ease;
+			background-color:  #404040;
+			border:1px solid grey;
+			float: left;
+			color: #99ff66;
+			font-size: 45px;
+			text-align:center;
+			display: flex;
+  justify-content: center;
+  align-items: center;
+		}
+		.button2{
+			width: 50%;
+			height: 15%;transition: 0.8s ease;
+			background-color: #00802b;
+			border:1px solid grey;
+			float: left;
+			color: white;
+			font-size: 60px;
+			text-align:center;
+			display: flex;
+  justify-content: center;
+  align-items: center;
+		}
+		.button1:hover{
+			color: white;
+			font-size: 60px;
+			text-align:center;
+			display: flex;transition: 0.4s ease;
+  justify-content: center;
+  align-items: center;
+		}
+
+		.button1:active{
+			background-color:#595959;transition: 0.8s ease;
+		}
+		.button2:hover{
+			background-color: #009933;
+			border-radius: 5px;
+			color: white;transition: 0.4s ease;
+			font-size: 80px;
+			text-align:center;
+			display: flex;
+  justify-content: center;
+  align-items: center;
+		}
+
+		.button2:active{
+			background-color: #00b33c;transition: 0.8s ease;
+		}
+		.button3:hover{
+			border:3px solid black;
+			border-radius:5px;
+			background-color: #4d4d4d;
+			color: white;
+			font-size: 60px;transition: 0.4s ease;
+			text-align:center;
+			display: flex;
+  justify-content: center;
+  align-items: center;
+		}
+		.button3:active{
+			background-color: #333333 ;transition: 0.8s ease;
+		}
+		@media only screen and (max-width: 600px) {
+			.screen{
+				width: 100%;
+				
+			}
+			html,body{
+				margin: 3px;
+			}
+			.button1{
+				font-size: 55px;
+			}
+			.button3{
+				font-size: 55px;
+			}
+			.button2{
+				font-size: 90px;
+			}
+            
+		}
+		@media only screen and (max-width: 400px) {
+			.button1{
+				font-size: 43px;
+			}
+			.button3{
+				font-size: 43px;
+			}
+			.button2{
+				font-size: 70px;
+			}
+            #display-screen{
+                font-size: 40px;
+            }
+			body,html{
+				height: 100%;
+			}
+			.screen{
+				height: 75%;
+			}
+			.button1:hover,.button2:hover,.button3:hover{
+				font-size: 20px;
+				overflow: hidden;
+			}
+			.button1,.button2,.button3{
+				font-size: 20px;
+			}
+		}
